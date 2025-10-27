@@ -1,0 +1,6 @@
+(defun power-series (b e)
+  (do ((i 0 (1+ i))
+      (result 1 (* result b))
+      (multi 0 (1+ multi)))
+       ((= i e)
+      (list result multi))))
