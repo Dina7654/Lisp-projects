@@ -1,0 +1,5 @@
+(defun count-positive-numbers (arr)
+  (let ((count 0))
+    (dotimes (i (length arr) count)
+      (when (> (aref arr i) 0)
+        (setf count(1+ count))))))
