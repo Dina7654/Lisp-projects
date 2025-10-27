@@ -1,0 +1,5 @@
+(defun filter-even-numbers (lst)
+  (cond ((null lst) nil)
+        ((evenp (car lst))
+         (cons (car lst) (filter-even-numbers (cdr lst))))
+        (t (filter-even-numbers (cdr lst)))))
